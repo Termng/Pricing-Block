@@ -1,0 +1,280 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color:#F5F5FA;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+ 
+
+:root{
+    --primary-color: #5243C2;
+    --secondary-color: #F496D1;
+    --white-color:#FFFFFF;
+    --neutral:#848199;
+    --text-color:#231D4F;
+    --neutral-light:#cfcfcfc4; 
+}
+
+
+.header{
+    margin-top: 50px;
+}
+
+.title{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.tagline{
+    color: var(--neutral);
+    text-align: center;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.btn-group{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+    margin-top: 40px;
+    background-color: var(--white-color);
+    flex-wrap: wrap;
+}
+.btn{
+    width: 111px;
+    height: 41px;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-size: 10px;
+}
+.active{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.passive{
+    background-color: var(--white-color);
+    color: var(--neutral);
+}
+
+.price{
+    font-weight: bolder;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+
+}
+
+.price span{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+    color: var(--neutral);
+}
+
+.tier{
+    font-size: 28px;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.descript{
+    color: var(--neutral);
+    font-size: 15px;
+    line-height: 20px;
+    width: 232px;
+    margin-bottom: 19px;
+}
+
+.list-flex{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom:10px;
+}
+
+.list-flex img{
+    width: 20px;
+    height: 20px;
+}
+.list-flex p{
+    font-size: 15px;
+    color: var(--neutral);
+}
+
+
+.list-container{
+    margin-bottom: 25px;
+}
+
+.cta{
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding: 13px 60px;
+    border: 1px solid var(--neutral-light);
+    border-radius: 30px;
+    margin-bottom: 20px;
+    transition: ease-in 0.3s;
+
+}
+
+.cta-btn{
+    margin-bottom: 20px;
+}
+
+
+.block{
+    padding: 40px;
+    width: fit-content;
+    border-radius: 20px;
+    transition: ease-in-out 0.1s;
+  
+}
+
+
+.flex-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-elements{
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+
+/* The classes below are for the elements that will be styled seperataley */
+
+.star{
+    color: var(--secondary-color);
+    background-color: #4031B3;
+    padding: 7px 17px 7px 17px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 10px;
+    width: fit-content;
+    font-weight: bolder;
+    position: relative;
+    transform: translateX(120px);
+}
+
+
+
+.best-deal{
+    background-color: var(--primary-color);
+    /* width: 392px; */
+    height: 500px;
+    border-radius: 20px;
+}
+
+
+
+.best-price, .best-tier, .best-descript, .best-price>span{
+    color: var(--white-color);
+}
+
+.best-cta{
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.best-list .list-flex p{
+    color: var(--white-color);
+}
+
+
+/* This is for pseudo classes and hover elements */
+.cta:hover{
+    color: var(--white-color);
+    background-color: var(--text-color);
+}
+
+.best-cta:hover{
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
