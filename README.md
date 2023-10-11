@@ -1,5 +1,5 @@
 # Pricing-Block
-A website pricing Block using flexbox
+A website pricing Block using CSS flexbox
 
 
 This pricing block is designed using flexbox, inspired by the Flowbase Component Library. It's a versatile and attractive design for website pricing sections. You are free to use this design as you see fit.
