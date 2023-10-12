@@ -117,7 +117,6 @@ select {
     justify-content:center;
     text-align: center;
     margin-top: 40px;
-    background-color: var(--white-color);
     flex-wrap: wrap;
 }
 .btn{
